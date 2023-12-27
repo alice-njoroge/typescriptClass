@@ -19,3 +19,7 @@ person.isAdmin = false;
 person.id = 3;
 person.name = "john doe";
 console.log(person);
+function addTwoNumbers(a, b) {
+    return a + b;
+}
+console.log(addTwoNumbers(5, 4));
