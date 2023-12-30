@@ -1,25 +1,17 @@
 "use strict";
-let names = "Joseph";
-names = "hohoho";
-let age = 10;
-//Arrays
-//array of strings 
-let arr = ['Ann', 'Jane', 'Hannah'];
-console.log(arr);
-//array of objects
-let arrObj = [{ firstName: "Alice", age: 10 }];
-console.log(arrObj);
-//type inference with object literals 
-let person = {
-    name: "Jane Doe",
-    id: 1,
-    isAdmin: true
-};
-person.isAdmin = false;
-person.id = 3;
-person.name = "john doe";
-console.log(person);
-function addTwoNumbers(a, b) {
-    return a + b;
+//tuples in typescript 
+let hsla;
+hsla = [200, '100%', '100%', 1];
+let coords;
+coords = [20.1, 97.4];
+function useCoordinates() {
+    //some logic to get the coordinates 
+    const latitude = 10;
+    const longitude = 50;
+    return [latitude, longitude];
 }
-console.log(addTwoNumbers(5, 4));
+const [lat, long] = useCoordinates();
+//named tuples 
+let user;
+user = ['name', 27];
+console.log(user[0]);
